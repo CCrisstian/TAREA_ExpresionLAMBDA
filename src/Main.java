@@ -5,9 +5,9 @@ public class Main {
         System.out.println("\n\tTarea: Expresión Lambda que elimine espacios\n");
 
         Function<String, String> Eliminar_Espacios_Comas_Puntos = entrada ->
-                entrada.replace(" ", "").   /*Elimina espacios en blanco*/
-                        replace(",", "").   /*Elimina comas*/
-                        replace(".","").    /*Elimina puntos*/
+                entrada.replaceAll(" ", "").   /*Elimina espacios en blanco*/
+                        replaceAll(",", "").   /*Elimina comas*/
+                        replaceAll("\\.","").    /*Elimina puntos*/
                         toUpperCase();                      /*Convierte las letras en mayúsculas*/
 
 
